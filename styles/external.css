@@ -1,0 +1,51 @@
+h2{
+    text-decoration:underline;
+    color: rgb(7, 35, 7);
+}
+
+.blog{
+    margin: 15px;
+    border: 10px solid rgb(171, 48, 48);
+    border-radius: 5px 50px;
+    box-shadow: 20px 15px 20px;
+    padding: 20px;
+    background-image: linear-gradient(to right,rgba(179, 35, 35, 0.402),rgba(31, 122, 122, 0.4));
+    line-height: 1.5;
+    animation: mymove 5s infinite;
+}
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-image: repeating-linear-gradient(-45deg,rgba(0, 0, 0, 0.849),grey);
+}
+header{
+    height: 150px;
+    font-style: bold;
+    text-align: center;
+    background-image: url("../images/bookNpen.jpg");
+    background-size: contain;
+    background-repeat:round;
+    border-radius: 10px;
+    box-shadow: 20px 10px 20px white;
+    animation: mymove 5s infinite;
+}
+#headline{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgba(219, 7, 7, 0.772);
+    font-weight: light;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(33, 24, 24);
+}
+.list{
+    border: 10px solid tomato;
+    border-radius: 50px 5px;
+    padding: 10px;
+    background-image: linear-gradient(45deg,rgba(0, 255, 255, 0.37),rgba(255, 99, 71, 0.655));
+    margin: 10%;
+    box-shadow: 20px 10px 20px grey;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove{
+    50% {box-shadow:-20px -15px 20px ;}
+}

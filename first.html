@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS</title>
+    <style>
+        *{
+            text-align: center;
+            margin-inline-end: 1%;
+        }
+        body{
+            margin: auto;
+            padding-left: 10px;
+            background-attachment: fixed;
+            background-color: rgba(183, 219, 219, 0.247);
+            background-image: linear-gradient(rgba(0, 128, 0, 0.352),rgba(255, 0, 0, 0.354));
+        }
+        p{
+            color: green;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .bgYellow{
+            background-color:yellow ;
+            margin: 0%;
+        }
+        h1{
+            color: brown;
+        }
+        input[type="password"]{
+            color: rgb(218, 102, 19);
+        }
+        #Login{
+            border: 4px solid black;
+            border-radius: 15px;
+            border-color: black;
+            background-color: azure;
+            position: relative;
+        }
+        input{
+            margin: 1%;
+            margin-top: 2%;
+        }
+    </style>  
+</head>
+<body>
+    <!--This is an inlinfe css-->
+    <h1 style="color: rgba(42, 50, 111, 0.74);">CSS</h3>
+    <p>CSS means Cascading Style Sheet</p>
+    <ul>
+        <li>inline</li>
+        <li>internal or embedded</li>
+        <li>external</li>
+    </ul> 
+    <h1>Mixed selectors</h1>
+    <h2>Class can be used as many times in as many elements</h2>
+    <h2>ID should be used only one time in a html file</h2>
+    <p class="bgYellow">This is a test paragraph.</p>
+    <p>This is a test paragraph.</p>
+    <p class="bgYellow">This is a test paragraph.</p>
+    <h1>Form</h1>
+    <form id="Login">
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" placeholder="Your name here">
+        <label for="Pass">Password:</label>
+        <input type="password" name="Pass" id="pass" placeholder="Your password here">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
