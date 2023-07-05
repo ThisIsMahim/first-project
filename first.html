@@ -10,22 +10,22 @@
             margin-inline-end: 1%;
         }
         body{
-            margin: auto;
-            padding-left: 10px;
-            background-attachment: fixed;
             background-color: rgba(183, 219, 219, 0.247);
-            background-image: linear-gradient(rgba(0, 128, 0, 0.352),rgba(255, 0, 0, 0.354));
+            background-image: repeating-linear-gradient(silver,grey);
         }
         p{
             color: green;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
         .bgYellow{
-            background-color:yellow ;
+            background-color:blanchedalmond;
             margin: 0%;
         }
         h1{
-            color: brown;
+            color: red;
+            -webkit-text-stroke-width: .5px;
+            -webkit-text-stroke-color: rgb(33, 24, 24);
+            text-shadow: 5px 2px 5px grey;
         }
         input[type="password"]{
             color: rgb(218, 102, 19);
@@ -34,18 +34,43 @@
             border: 4px solid black;
             border-radius: 15px;
             border-color: black;
-            background-color: azure;
+            background-color: rgba(154, 217, 217, 0.568);
             position: relative;
         }
         input{
             margin: 1%;
             margin-top: 2%;
         }
+        li{ text-align: center;
+            display: block;
+            background-color: silver;
+            margin: 2px;
+        }
+        .LoginBtn{
+            border: none;
+            color: aliceblue;
+            background-color: rgba(36, 36, 81, 0.546);
+            padding: auto;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        header{
+            background-image: url(images/bookNpen.jpg);
+            border: 3px solid rgb(5, 14, 5);
+        }
+        .headline{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: silver;
+        }
     </style>  
 </head>
 <body>
+    <header>
+        <h1 class="headline">This is the first web</h1>
+    </header>
     <!--This is an inlinfe css-->
-    <h1 style="color: rgba(42, 50, 111, 0.74);">CSS</h3>
+    <h1>CSS</h1>
     <p>CSS means Cascading Style Sheet</p>
     <ul>
         <li>inline</li>
@@ -65,7 +90,7 @@
         <label for="Pass">Password:</label>
         <input type="password" name="Pass" id="pass" placeholder="Your password here">
         <br>
-        <input type="submit" value="Login">
+        <input class="LoginBtn" type="submit" value="Login">
     </form>
 </body>
 </html>

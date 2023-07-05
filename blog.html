@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
     <style>
         body{
-            background-image: linear-gradient(white,rgba(164, 43, 43, 0.217));
+            background-image: repeating-linear-gradient(to right, blue, yel);
         }
         .blog{
             border: 2px solid black;
@@ -15,7 +15,7 @@
             border-radius: 15px 0px;
             margin: 30px 10px 20px  ;
             text-decoration: wavy;
-            background-color: aquamarine;
+            background-color: rgba(47, 128, 100, 0.283);
             padding: 2%;
         }
         h2{
@@ -23,9 +23,24 @@
             font-style: normal;
             color: rgb(255, 35, 6);
         }
+        header{
+            background-image: url(images/bookNpen.jpg);
+            border: 3px solid rgb(5, 14, 5);
+        }
+        .headline{
+            -webkit-text-stroke: black;
+            -webkit-text-stroke-width: .5px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: silver;
+        }
+
     </style>
 </head>
 <body>
+    <header>
+        <h1 class="headline">This is the first blog web</h1>
+    </header>
     <div class="blog">
         <h2>First blog</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aperiam ea praesentium neque molestias voluptas, odit reiciendis ipsa sunt voluptatibus natus non excepturi cum nemo, enim deserunt, architecto facilis similique.</p>

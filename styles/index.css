@@ -1,0 +1,68 @@
+*{  text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24 px;
+}
+header{
+    background-image: linear-gradient(to right,azure,silver);
+    border: 3px solid rgb(5, 14, 5);
+}
+.headline{
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: .5px;
+    text-align: center;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(255, 0, 0, 0.785);
+    text-shadow: 10px 10px 10px grey;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: rgb(207, 42, 42) ;
+}
+a:visited{
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgb(255, 10, 10);
+    text-shadow: 10px;
+    font-size: larger;
+    animation: blinking 2s linear infinite;
+    cursor: pointer;
+}
+a:active{
+    color: blueviolet;
+}
+@-webkit-keyframes blinking {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+    }
+.gallery{
+    margin: 50px;
+    border: 30px solid transparent;
+    border-image: url(../images/border.png) 30 round;
+    border-radius: 0px 50px;
+    animation: turning 5s infinite;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+body{
+    background-image: linear-gradient(rgb(222, 255, 252),rgba(255, 217, 0, 0.578));
+}
+h3{
+font-size: 30px;
+font-family: cursive;
+}
+h2{
+    font-size: 40px;
+    backdrop-filter:initial ;
+}
+@-webkit-keyframes turning{
+    25% {border-image: url(../images/border.png) 35 round;}
+    50% {border-image: url(../images/border.png) 40 round;}
+    75% {border-image: url(../images/border.png) 35 round;}
+}
